@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700;900&display=swap');
+
+$cinza: #CED7DF;
+$cinza-dark: #8b9196;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+// header{
+//     border: 1px solid;
+//     height: 230px;
+//     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.50)100%),url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
+//     background-size: cover;
+
+//     nav{
+//         display: flex;
+//         // justify-content: center;
+//         align-items: center;
+//         padding: 1% 6%;
+
+//         .imagem-profile{
+//             overflow: hidden;
+//             border-radius: 50%;
+//             width: 200px;
+//             img{
+//                 width: 100%;
+//             }
+//         }
+
+//         .nome{
+//             margin-left: 5%;
+//             color: white;
+
+//             h1{
+//                 font-size: 3rem;
+//                 text-transform: uppercase;
+//             }
+
+//             span{
+//                 font-size: 2rem;
+//             }
+//         }
+
+//     }
+// }
+
+
+header{
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        //border: 1px solid;
+        max-width: 1300px;
+        margin: 0 auto;
+        position: relative;
+        height: 160px;
+        background-color: $cinza;
+
+        .conteudo-nav{
+        position: absolute;
+        top: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+            .imagem-profile{
+            //    border: 1px solid;
+                // width: 200px;
+                border-radius: 50% 50%;
+                overflow: hidden;
+                width: 150px;
+                img{
+                    width: 100%;
+                    // position: absolute;
+                    object-fit: cover;
+                   
+                }
+            }
+    
+            .nome{
+                text-align: center;
+               
+    
+                h1{
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+                span{
+                   font-size: 1rem;
+                   color:$cinza-dark;
+                }
+
+                
+            }
+        }
+
+    }
+}
+
+main{
+ //@at-root   position: absolute;
+  //  border: 1px solid red;
+    margin-top: 10%;
+    //position: fixed;
+    .conteudo{
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+
+
+        .lado-direito{
+         // border: 1px solid;
+          padding: 5%;
+          width: 100%;
+        }
+        .meio{
+            border: 1px solid $cinza;
+            height: auto;
+            margin: 3% 0;
+        }
+
+        .lado-esquerdo{
+            width: 100%;
+      //    border: 1px solid;
+          padding: 5%;
+
+        }
+
+        .spec{
+            display: flex;
+            flex-direction: column;
+            max-width: 95%;
+            margin: 20px 0;
+            h5{
+                color: $cinza-dark;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            span{
+                font-weight: bold;
+                padding: 10px 0;
+            }
+            ul{
+                padding-left: 15px;
+                li{
+                   // list-style: none;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+footer{
+   // border: 1px solid;
+    width: 100%;
+    padding: 3%;
+
+    .conteudo-footer{
+        display: flex;
+        justify-content: flex-end;
+        // align-items: center;
+        a{
+           
+            text-decoration: none;
+            color: black;
+        }
+        .btnBaixar{
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+           
+            .icon i{    
+                font-size: 2rem;
+            }
+            .text {
+                margin-top: 5px;
+                span{
+                text-transform: uppercase;
+                font-size: .8rem;
+                
+            }
+        }
+        }
+    }
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  position: relative;
+  height: 160px;
+  background-color: #CED7DF;
+}
+
+header nav .conteudo-nav {
+  position: absolute;
+  top: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .conteudo-nav .imagem-profile {
+  border-radius: 50% 50%;
+  overflow: hidden;
+  width: 150px;
+}
+
+header nav .conteudo-nav .imagem-profile img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+header nav .conteudo-nav .nome {
+  text-align: center;
+}
+
+header nav .conteudo-nav .nome h1 {
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+header nav .conteudo-nav .nome span {
+  font-size: 1rem;
+  color: #8b9196;
+}
+
+main {
+  margin-top: 10%;
+}
+
+main .conteudo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+main .conteudo .lado-direito {
+  padding: 5%;
+  width: 100%;
+}
+
+main .conteudo .meio {
+  border: 1px solid #CED7DF;
+  height: auto;
+  margin: 3% 0;
+}
+
+main .conteudo .lado-esquerdo {
+  width: 100%;
+  padding: 5%;
+}
+
+main .conteudo .spec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 95%;
+  margin: 20px 0;
+}
+
+main .conteudo .spec h5 {
+  color: #8b9196;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+main .conteudo .spec span {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+main .conteudo .spec ul {
+  padding-left: 15px;
+}
+
+main .conteudo .spec ul li {
+  margin-top: 10px;
+}
+
+footer {
+  width: 100%;
+  padding: 3%;
+}
+
+footer .conteudo-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .conteudo-footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer .conteudo-footer .btnBaixar {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .conteudo-footer .btnBaixar .icon i {
+  font-size: 2rem;
+}
+
+footer .conteudo-footer .btnBaixar .text {
+  margin-top: 5px;
+}
+
+footer .conteudo-footer .btnBaixar .text span {
+  text-transform: uppercase;
+  font-size: .8rem;
+}
+/*# sourceMappingURL=estilo.css.map */

@@ -12,46 +12,9 @@ $cinza-dark: #8b9196;
 body{
     font-family: 'Montserrat', sans-serif;
 }
-// header{
-//     border: 1px solid;
-//     height: 230px;
-//     background: linear-gradient(rgba(0, 0, 0, 0.20), rgba(0, 0, 0, 0.50)100%),url(https://images.pexels.com/photos/2653362/pexels-photo-2653362.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) no-repeat;
-//     background-size: cover;
-
-//     nav{
-//         display: flex;
-//         // justify-content: center;
-//         align-items: center;
-//         padding: 1% 6%;
-
-//         .imagem-profile{
-//             overflow: hidden;
-//             border-radius: 50%;
-//             width: 200px;
-//             img{
-//                 width: 100%;
-//             }
-//         }
-
-//         .nome{
-//             margin-left: 5%;
-//             color: white;
-
-//             h1{
-//                 font-size: 3rem;
-//                 text-transform: uppercase;
-//             }
-
-//             span{
-//                 font-size: 2rem;
-//             }
-//         }
-
-//     }
-// }
-
-
 header{
+    margin-bottom: min(1000px, 150px);
+  //  border: 1px solid yellow;
     nav{
         display: flex;
         justify-content: center;
@@ -63,8 +26,13 @@ header{
         position: relative;
         height: 160px;
         background-color: $cinza;
+        
+       
 
         .conteudo-nav{
+          //  margin-top: 10%;
+      //    border: 1px solid rebeccapurple;
+           // padding-bottom: 100%;
         position: absolute;
         top: 50%;
         display: flex;
@@ -73,12 +41,10 @@ header{
         align-items: center;
 
             .imagem-profile{
-            //    border: 1px solid;
-                // width: 200px;
-                border-radius: 50% 50%;
                 overflow: hidden;
                 width: 150px;
                 img{
+                    border-radius: 50%;
                     width: 100%;
                     // position: absolute;
                     object-fit: cover;
@@ -108,14 +74,14 @@ header{
 }
 
 main{
- //@at-root   position: absolute;
-  //  border: 1px solid red;
-    margin-top: 10%;
-    //position: fixed;
+
     .conteudo{
+        // position: absolute;
         display: flex;
         max-width: 1000px;
         margin: 0 auto;
+      //  position: absolute;
+    //   border: 1px solid red;
 
 
         .lado-direito{
@@ -135,6 +101,7 @@ main{
           padding: 5%;
 
         }
+    
 
         .spec{
             display: flex;
@@ -194,4 +161,13 @@ footer{
         }
         }
     }
+}
+
+@media screen and (max-width:520px){
+  .conteudo{
+      flex-direction: column;
+  }
+  .meio{
+      display: none;
+  }
 }

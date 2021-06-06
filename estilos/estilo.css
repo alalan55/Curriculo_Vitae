@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 header {
@@ -32,7 +32,7 @@ header nav {
   margin: 0 auto;
   position: relative;
   height: 160px;
-  background-color: #CED7DF;
+  background-color: #ced7df;
 }
 
 header nav .conteudo-nav {
@@ -94,7 +94,7 @@ main .conteudo .lado-direito {
 }
 
 main .conteudo .meio {
-  border: 1px solid #CED7DF;
+  border: 1px solid #ced7df;
   height: auto;
   margin: 3% 0;
 }
@@ -102,6 +102,13 @@ main .conteudo .meio {
 main .conteudo .lado-esquerdo {
   width: 100%;
   padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 main .conteudo .spec {
@@ -178,7 +185,7 @@ footer .conteudo-footer .btnBaixar .text {
 
 footer .conteudo-footer .btnBaixar .text span {
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 @media screen and (max-width: 520px) {
@@ -190,6 +197,12 @@ footer .conteudo-footer .btnBaixar .text span {
   }
   .meio {
     display: none;
+  }
+  .lado-esquerdo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0 5% !important;
   }
 }
 /*# sourceMappingURL=estilo.css.map */
